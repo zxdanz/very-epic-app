@@ -26,6 +26,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button" subtitle="testing" titlePadding="0.0" titleAlignment="center">
                                     <fontDescription key="subtitleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fuh-FL-7b1"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lis-KD-F27">
                                 <rect key="frame" x="50" y="100" width="300" height="300"/>
@@ -45,14 +48,22 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images ig" translatesAutoresizingMaskIntoConstraints="NO" id="gFP-ZQ-sOM">
-                                <rect key="frame" x="73" y="429" width="240" height="128"/>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat2" translatesAutoresizingMaskIntoConstraints="NO" id="zEP-au-4wE">
+                                <rect key="frame" x="249" y="470" width="101" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cat1" translatesAutoresizingMaskIntoConstraints="NO" id="gFP-ZQ-sOM">
+                                <rect key="frame" x="50" y="470" width="106" height="106"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.92941176470588238" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="pic1" destination="gFP-ZQ-sOM" id="dXD-ot-zKh"/>
+                        <outlet property="pic2" destination="zEP-au-4wE" id="mRH-51-2FI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +71,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cat1" width="3456" height="5184"/>
+        <image name="cat2" width="4990" height="3327"/>
         <image name="heart.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="images ig" width="675" height="1200"/>
     </resources>
 </document>
